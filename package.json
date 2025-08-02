@@ -1,5 +1,5 @@
 {
-    "name": "web-content-extractor",
+    "name": "web-content-extract",
     "version": "1.0.0",
     "description": "A library and command-line tool to extract clean content from web pages using Mozilla Readability and convert it to Markdown or JSON.",
     "main": "dist/lib/index.js",
@@ -37,6 +37,14 @@
     ],
     "author": "Amoyensis <amoyensis@outlook.com>",
     "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git+ssh://git@github.com/Amoyens1s/web-content-extract.git"
+    },
+    "bugs": {
+        "url": "https://github.com/Amoyens1s/web-content-extract/issues"
+    },
+    "homepage": "https://github.com/Amoyens1s/web-content-extract#readme",
     "dependencies": {
         "@mozilla/readability": "^0.5.0",
         "jsdom": "^24.1.1",

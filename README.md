@@ -21,20 +21,20 @@ A library and command-line tool to extract clean content from web pages using Mo
 ## Installation
 
 ```bash
-npm install web-content-extractor
+npm install web-content-extract
 ```
 
 ## Usage as a Library
 
 ```typescript
-import { extractContent } from "web-content-extractor";
+import { extractContent } from "web-content-extract";
 
 // Basic content extraction
-const result = await extractContent("https://example.com/article");
+const result = await extractContent("https://example.com");
 console.log(result.content); // Markdown content
 
 // Content extraction with SEO metadata
-const resultWithSeo = await extractContent("https://example.com/article", true);
+const resultWithSeo = await extractContent("https://example.com", true);
 console.log(resultWithSeo.title); // Article title
 console.log(resultWithSeo.seo); // SEO metadata
 console.log(resultWithSeo.content); // Markdown content
@@ -48,7 +48,7 @@ console.log(JSON.stringify(resultWithSeo, null, 2));
 Run the tool using `npx`:
 
 ```bash
-npx web-content-extractor <url> [options]
+npx web-content-extract <url> [options]
 ```
 
 ### Arguments
@@ -66,25 +66,25 @@ npx web-content-extractor <url> [options]
 Extract content and output to stdout:
 
 ```bash
-npx web-content-extractor https://example.com/article
+npx web-content-extract https://example.com
 ```
 
 Extract content and save to a file:
 
 ```bash
-npx web-content-extractor https://example.com/article -o output.md
+npx web-content-extract https://example.com -o output.md
 ```
 
 Extract content with SEO metadata in YAML Front Matter format:
 
 ```bash
-npx web-content-extractor https://example.com/article --seo
+npx web-content-extract https://example.com --seo
 ```
 
 Extract content with SEO metadata in JSON format:
 
 ```bash
-npx web-content-extractor https://example.com/article --seo --json
+npx web-content-extract https://example.com --seo --json
 ```
 
 ## API
