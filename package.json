@@ -1,0 +1,55 @@
+{
+    "name": "web-content-extractor",
+    "version": "1.0.0",
+    "description": "A library and command-line tool to extract clean content from web pages using Mozilla Readability and convert it to Markdown or JSON.",
+    "main": "dist/lib/index.js",
+    "module": "dist/lib/index.mjs",
+    "types": "dist/lib/index.d.ts",
+    "exports": {
+        ".": {
+            "import": "./dist/lib/index.mjs",
+            "require": "./dist/lib/index.js",
+            "types": "./dist/lib/index.d.ts"
+        }
+    },
+    "bin": {
+        "web-content-extractor": "dist/index.js"
+    },
+    "files": [
+        "dist/",
+        "src/"
+    ],
+    "scripts": {
+        "build": "tsc",
+        "start": "tsx src/index.ts",
+        "test": "tsx test/test-extractor.ts",
+        "prepublishOnly": "npm run build"
+    },
+    "keywords": [
+        "web",
+        "scraping",
+        "readability",
+        "content",
+        "extraction",
+        "markdown",
+        "seo",
+        "json"
+    ],
+    "author": "Amoyensis <amoyensis@outlook.com>",
+    "license": "MIT",
+    "dependencies": {
+        "@mozilla/readability": "^0.5.0",
+        "jsdom": "^24.1.1",
+        "ofetch": "^1.3.4",
+        "turndown": "^7.2.0",
+        "yargs": "^17.7.2"
+    },
+    "devDependencies": {
+        "@types/jsdom": "^21.1.7",
+        "@types/node": "^22.1.0",
+        "@types/turndown": "^5.0.5",
+        "@types/yargs": "^17.0.33",
+        "tsx": "^4.17.0",
+        "typescript": "^5.5.4"
+    }
+}
