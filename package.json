@@ -13,7 +13,7 @@
         }
     },
     "bin": {
-        "web-content-extractor": "dist/index.js"
+        "web-content-extract": "dist/index.js"
     },
     "files": [
         "dist/",
