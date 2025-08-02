@@ -1,4 +1,6 @@
-# Web Content Extractor
+# Web Content Extract
+
+[中文版本](README_zh.md)
 
 A library and command-line tool to extract clean content from web pages using Mozilla Readability, with enhanced SEO metadata extraction and JSON output support.
 
