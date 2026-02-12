@@ -1,6 +1,6 @@
 {
     "name": "web-content-extract",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "A library and command-line tool to extract clean content from web pages using Mozilla Readability and convert it to Markdown or JSON.",
     "main": "dist/lib/index.js",
     "module": "dist/lib/index.mjs",
